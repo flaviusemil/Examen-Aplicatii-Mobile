@@ -24,4 +24,15 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+    selectedItem: String = '';
+
+    selectItem(item) {
+        this.selectedItem = item.target.value;
+    }
+
+    logForm() {
+        console.log(this.selectedItem);
+        // this.nav.navigateForward('car/' + this.selectedItem);
+    }
+}

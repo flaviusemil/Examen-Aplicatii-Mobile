@@ -11,10 +11,9 @@ const routes: Routes = [
     path: 'home',
     loadChildren: './home/home.module#HomePageModule'
   },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
-  }
+  { path: 'car/bmw', loadChildren: './car/bmw/bmw.module#BmwPageModule' },
+  { path: 'car/mercedes', loadChildren: './car/mercedes/mercedes.module#MercedesPageModule' },
+  { path: 'car/audi', loadChildren: './car/audi/audi.module#AudiPageModule' }
 ];
 
 @NgModule({
